@@ -1,2 +1,2 @@
-# jan-ken-po
-Jan-Ken-Pô game project using Java. 
+# jan ken po
+Jan Ken Po game project using Java. 
