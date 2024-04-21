@@ -1,5 +1,11 @@
 /*
- * 
+ * Name: Jan Ken Po
+ * Author: a-dornez <https://github.com/a-dornez>
+ * Version: 1.0
+ * Copyright: MIT license
+ * Description: Terminal based Jan Ken Po game! User plays against a machine player, whose plays
+ * are randomly decided, player can choose to play again. A simple way to exercise and assess my
+ * skills, practice designing and considering multiple ways to approach problems.
  */
 
 import java.util.Random;
@@ -27,7 +33,7 @@ public class JanKenPo {
 			int chosenHandIndex = getPcHand.nextInt(possibleHands.length);
 			String pcHand = possibleHands[chosenHandIndex];
 			
-			//player hand vs pc hand - indicates weather player won or lost
+			//player hand vs pc hand - uses human-player victory scenarios as perspective
 			String winLose;
 			if ( playerHand.equalsIgnoreCase("R") && pcHand == "S" ) {
 				winLose = "Win";
@@ -63,5 +69,5 @@ public class JanKenPo {
 		
 		scanner.close();
 	}
-
 }
+
